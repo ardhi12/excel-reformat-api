@@ -1,0 +1,38 @@
+swagger: '2.0'
+info:
+  title: excel-reformat-api
+  description: Excel Reformat API on API Gateway with a Google Cloud Run
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /reformat:
+    post:
+      summary: Reformat Excel files to the specific business format required
+      operationId: reformat
+      x-google-backend:
+        address: https://xxx/reformat
+        deadline: 60.0
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: A successful response
+  /healthcheck:
+    get:
+      summary: Check the health of the service
+      operationId: healthcheck
+      x-google-backend:
+        address: https://xxx/healthcheck
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: A successful response
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "x-api-key"
+    in: "header"

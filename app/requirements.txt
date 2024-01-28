@@ -1,0 +1,11 @@
+fastapi==0.108.0
+pandas==2.1.4
+uvicorn==0.25.0
+python-multipart==0.0.6
+requests==2.31.0
+openpyxl==3.1.2
+pytz==2022.7
+google-cloud-storage==2.10.0
+gcsfs==2023.12.1
+python-dotenv==1.0.1
+xlsxwriter==3.1.9

@@ -1,0 +1,6 @@
+__pycache__/
+env/
+sample-file/
+test/
+.DS_Store
+.env
